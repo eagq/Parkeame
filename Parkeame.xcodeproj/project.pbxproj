@@ -1,0 +1,580 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3A1059BD20C78129004ADFDF /* LoginDelgate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1059BC20C78129004ADFDF /* LoginDelgate.swift */; };
+		3A1059BF20C78179004ADFDF /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1059BE20C78179004ADFDF /* LoginViewController.swift */; };
+		3A548FFA20C7646A00558085 /* LoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A548FF920C7646A00558085 /* LoginView.xib */; };
+		3A548FFC20C7691300558085 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A548FFB20C7691300558085 /* LoginView.swift */; };
+		3A5F8AD220C777DA00DB5759 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3A5F8AD120C777DA00DB5759 /* GoogleService-Info.plist */; };
+		3A9E9026207D6ABC0055F6C6 /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A9E9025207D6ABC0055F6C6 /* TimerViewController.swift */; };
+		3A9E9028207D6CDD0055F6C6 /* TimerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A9E9027207D6CDD0055F6C6 /* TimerDelegate.swift */; };
+		3AB5E0B320C8B1420062F9D4 /* RegisterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3AB5E0B220C8B1420062F9D4 /* RegisterView.xib */; };
+		3AB5E0B520C8D2530062F9D4 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB5E0B420C8D2530062F9D4 /* RegisterViewController.swift */; };
+		3AB5E0B720C8D26C0062F9D4 /* RegisterDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB5E0B620C8D26C0062F9D4 /* RegisterDelegate.swift */; };
+		3AB5E0B920C8D2840062F9D4 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB5E0B820C8D2840062F9D4 /* RegisterView.swift */; };
+		3AC54341207D7B5200571E11 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC54340207D7B5200571E11 /* AboutViewController.swift */; };
+		3AC54343207D7B9E00571E11 /* AboutDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC54342207D7B9E00571E11 /* AboutDelegate.swift */; };
+		3AC54345207D89BA00571E11 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC54344207D89BA00571E11 /* ProfileViewController.swift */; };
+		3AC54347207D8A6700571E11 /* ProfileDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC54346207D8A6700571E11 /* ProfileDelegate.swift */; };
+		3AC5434A207D9E0C00571E11 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC54348207D9E0C00571E11 /* TableViewCell.swift */; };
+		3AC5434B207D9E0C00571E11 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3AC54349207D9E0C00571E11 /* TableViewCell.xib */; };
+		3AC5434D207D9FD000571E11 /* PayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC5434C207D9FD000571E11 /* PayViewController.swift */; };
+		3AC5434F207DA0D900571E11 /* PayDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC5434E207DA0D900571E11 /* PayDelegate.swift */; };
+		7145A5FBEF884B57A2E99A24 /* Pods_Parkeame.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0479CA7CC0428B15A14F6DF5 /* Pods_Parkeame.framework */; };
+		CC32B5932073FE89006E640D /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC32B5912073FE89006E640D /* ProfileView.swift */; };
+		CC32B5942073FE89006E640D /* ProfileView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC32B5922073FE89006E640D /* ProfileView.xib */; };
+		CC32B5992073FEBA006E640D /* PayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC32B5972073FEBA006E640D /* PayView.swift */; };
+		CC32B59A2073FEBA006E640D /* PayView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC32B5982073FEBA006E640D /* PayView.xib */; };
+		CC32B59D2073FED0006E640D /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC32B59B2073FED0006E640D /* TimerView.swift */; };
+		CC32B59E2073FED0006E640D /* TimerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC32B59C2073FED0006E640D /* TimerView.xib */; };
+		CC32B5A12073FEE4006E640D /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC32B59F2073FEE4006E640D /* AboutView.swift */; };
+		CC32B5A22073FEE4006E640D /* AboutView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC32B5A02073FEE4006E640D /* AboutView.xib */; };
+		CCAC34DE2073E78F00F046C5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCAC34DD2073E78F00F046C5 /* AppDelegate.swift */; };
+		CCAC34E02073E78F00F046C5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCAC34DF2073E78F00F046C5 /* ViewController.swift */; };
+		CCAC34E32073E78F00F046C5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCAC34E12073E78F00F046C5 /* Main.storyboard */; };
+		CCAC34E52073E79200F046C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCAC34E42073E79200F046C5 /* Assets.xcassets */; };
+		CCAC34E82073E79200F046C5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCAC34E62073E79200F046C5 /* LaunchScreen.storyboard */; };
+		CCAC34F12073E8A700F046C5 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCAC34EF2073E8A700F046C5 /* MenuViewController.swift */; };
+		CCAC34F22073E8A700F046C5 /* MenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CCAC34F02073E8A700F046C5 /* MenuViewController.xib */; };
+		CCAC34F52073F33100F046C5 /* Annotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCAC34F42073F33100F046C5 /* Annotation.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0479CA7CC0428B15A14F6DF5 /* Pods_Parkeame.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Parkeame.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		232061A0EA6C0EC059C36B62 /* Pods-Parkeame.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Parkeame.release.xcconfig"; path = "Pods/Target Support Files/Pods-Parkeame/Pods-Parkeame.release.xcconfig"; sourceTree = "<group>"; };
+		3A1059BC20C78129004ADFDF /* LoginDelgate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginDelgate.swift; sourceTree = "<group>"; };
+		3A1059BE20C78179004ADFDF /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		3A548FF920C7646A00558085 /* LoginView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginView.xib; sourceTree = "<group>"; };
+		3A548FFB20C7691300558085 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		3A5F8AD120C777DA00DB5759 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		3A9E9025207D6ABC0055F6C6 /* TimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
+		3A9E9027207D6CDD0055F6C6 /* TimerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerDelegate.swift; sourceTree = "<group>"; };
+		3AB5E0B220C8B1420062F9D4 /* RegisterView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterView.xib; sourceTree = "<group>"; };
+		3AB5E0B420C8D2530062F9D4 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		3AB5E0B620C8D26C0062F9D4 /* RegisterDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterDelegate.swift; sourceTree = "<group>"; };
+		3AB5E0B820C8D2840062F9D4 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		3AC54340207D7B5200571E11 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		3AC54342207D7B9E00571E11 /* AboutDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutDelegate.swift; sourceTree = "<group>"; };
+		3AC54344207D89BA00571E11 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		3AC54346207D8A6700571E11 /* ProfileDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileDelegate.swift; sourceTree = "<group>"; };
+		3AC54348207D9E0C00571E11 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		3AC54349207D9E0C00571E11 /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
+		3AC5434C207D9FD000571E11 /* PayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayViewController.swift; sourceTree = "<group>"; };
+		3AC5434E207DA0D900571E11 /* PayDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayDelegate.swift; sourceTree = "<group>"; };
+		A0C62B0C88C5810A580B4140 /* Pods-Parkeame.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Parkeame.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Parkeame/Pods-Parkeame.debug.xcconfig"; sourceTree = "<group>"; };
+		CC32B5912073FE89006E640D /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		CC32B5922073FE89006E640D /* ProfileView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileView.xib; sourceTree = "<group>"; };
+		CC32B5972073FEBA006E640D /* PayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayView.swift; sourceTree = "<group>"; };
+		CC32B5982073FEBA006E640D /* PayView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PayView.xib; sourceTree = "<group>"; };
+		CC32B59B2073FED0006E640D /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
+		CC32B59C2073FED0006E640D /* TimerView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TimerView.xib; sourceTree = "<group>"; };
+		CC32B59F2073FEE4006E640D /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
+		CC32B5A02073FEE4006E640D /* AboutView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AboutView.xib; sourceTree = "<group>"; };
+		CCAC34DA2073E78F00F046C5 /* Parkeame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Parkeame.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CCAC34DD2073E78F00F046C5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CCAC34DF2073E78F00F046C5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CCAC34E22073E78F00F046C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CCAC34E42073E79200F046C5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CCAC34E72073E79200F046C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CCAC34E92073E79200F046C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CCAC34EF2073E8A700F046C5 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		CCAC34F02073E8A700F046C5 /* MenuViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuViewController.xib; sourceTree = "<group>"; };
+		CCAC34F42073F33100F046C5 /* Annotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Annotation.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CCAC34D72073E78F00F046C5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7145A5FBEF884B57A2E99A24 /* Pods_Parkeame.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		99255FD90EFACF51011ABD49 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A0C62B0C88C5810A580B4140 /* Pods-Parkeame.debug.xcconfig */,
+				232061A0EA6C0EC059C36B62 /* Pods-Parkeame.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CC32B5A32073FEEC006E640D /* xib */ = {
+			isa = PBXGroup;
+			children = (
+				CCAC34F02073E8A700F046C5 /* MenuViewController.xib */,
+				CC32B5922073FE89006E640D /* ProfileView.xib */,
+				CC32B5982073FEBA006E640D /* PayView.xib */,
+				3AC54349207D9E0C00571E11 /* TableViewCell.xib */,
+				CC32B59C2073FED0006E640D /* TimerView.xib */,
+				CC32B5A02073FEE4006E640D /* AboutView.xib */,
+				3A548FF920C7646A00558085 /* LoginView.xib */,
+				3AB5E0B220C8B1420062F9D4 /* RegisterView.xib */,
+			);
+			name = xib;
+			sourceTree = "<group>";
+		};
+		CCAC34D12073E78F00F046C5 = {
+			isa = PBXGroup;
+			children = (
+				CCAC34DC2073E78F00F046C5 /* Parkeame */,
+				CCAC34DB2073E78F00F046C5 /* Products */,
+				99255FD90EFACF51011ABD49 /* Pods */,
+				FBDCFCFA524C942A8EFAC8DC /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CCAC34DB2073E78F00F046C5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CCAC34DA2073E78F00F046C5 /* Parkeame.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CCAC34DC2073E78F00F046C5 /* Parkeame */ = {
+			isa = PBXGroup;
+			children = (
+				3A5F8AD120C777DA00DB5759 /* GoogleService-Info.plist */,
+				CCAC34F82073F93400F046C5 /* Services */,
+				CCAC34F72073F92600F046C5 /* Model */,
+				CCAC34F62073F91800F046C5 /* View */,
+			);
+			path = Parkeame;
+			sourceTree = "<group>";
+		};
+		CCAC34F62073F91800F046C5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CC32B5A32073FEEC006E640D /* xib */,
+				CCAC34E12073E78F00F046C5 /* Main.storyboard */,
+				3AC54348207D9E0C00571E11 /* TableViewCell.swift */,
+				3AC5434E207DA0D900571E11 /* PayDelegate.swift */,
+				3AC54346207D8A6700571E11 /* ProfileDelegate.swift */,
+				CCAC34DF2073E78F00F046C5 /* ViewController.swift */,
+				CCAC34EF2073E8A700F046C5 /* MenuViewController.swift */,
+				CC32B5912073FE89006E640D /* ProfileView.swift */,
+				3AC54344207D89BA00571E11 /* ProfileViewController.swift */,
+				CC32B5972073FEBA006E640D /* PayView.swift */,
+				CC32B59B2073FED0006E640D /* TimerView.swift */,
+				3AC5434C207D9FD000571E11 /* PayViewController.swift */,
+				CC32B59F2073FEE4006E640D /* AboutView.swift */,
+				3A9E9025207D6ABC0055F6C6 /* TimerViewController.swift */,
+				3A9E9027207D6CDD0055F6C6 /* TimerDelegate.swift */,
+				3AC54340207D7B5200571E11 /* AboutViewController.swift */,
+				3AC54342207D7B9E00571E11 /* AboutDelegate.swift */,
+				3A548FFB20C7691300558085 /* LoginView.swift */,
+				3A1059BC20C78129004ADFDF /* LoginDelgate.swift */,
+				3A1059BE20C78179004ADFDF /* LoginViewController.swift */,
+				3AB5E0B420C8D2530062F9D4 /* RegisterViewController.swift */,
+				3AB5E0B620C8D26C0062F9D4 /* RegisterDelegate.swift */,
+				3AB5E0B820C8D2840062F9D4 /* RegisterView.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		CCAC34F72073F92600F046C5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CCAC34DD2073E78F00F046C5 /* AppDelegate.swift */,
+				CCAC34F42073F33100F046C5 /* Annotation.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		CCAC34F82073F93400F046C5 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				CCAC34E62073E79200F046C5 /* LaunchScreen.storyboard */,
+				CCAC34E42073E79200F046C5 /* Assets.xcassets */,
+				CCAC34E92073E79200F046C5 /* Info.plist */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
+		FBDCFCFA524C942A8EFAC8DC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0479CA7CC0428B15A14F6DF5 /* Pods_Parkeame.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CCAC34D92073E78F00F046C5 /* Parkeame */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CCAC34EC2073E79200F046C5 /* Build configuration list for PBXNativeTarget "Parkeame" */;
+			buildPhases = (
+				844980CDBC92D7DFAF32A118 /* [CP] Check Pods Manifest.lock */,
+				CCAC34D62073E78F00F046C5 /* Sources */,
+				CCAC34D72073E78F00F046C5 /* Frameworks */,
+				CCAC34D82073E78F00F046C5 /* Resources */,
+				B15708D24E046DF4D9314D90 /* [CP] Embed Pods Frameworks */,
+				D2AC07E3BD9F07E3521079BA /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Parkeame;
+			productName = Reservapp;
+			productReference = CCAC34DA2073E78F00F046C5 /* Parkeame.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CCAC34D22073E78F00F046C5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = "Edgar Gaytán";
+				TargetAttributes = {
+					CCAC34D92073E78F00F046C5 = {
+						CreatedOnToolsVersion = 9.3;
+					};
+				};
+			};
+			buildConfigurationList = CCAC34D52073E78F00F046C5 /* Build configuration list for PBXProject "Parkeame" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CCAC34D12073E78F00F046C5;
+			productRefGroup = CCAC34DB2073E78F00F046C5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CCAC34D92073E78F00F046C5 /* Parkeame */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CCAC34D82073E78F00F046C5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCAC34E82073E79200F046C5 /* LaunchScreen.storyboard in Resources */,
+				3AB5E0B320C8B1420062F9D4 /* RegisterView.xib in Resources */,
+				3AC5434B207D9E0C00571E11 /* TableViewCell.xib in Resources */,
+				CC32B59E2073FED0006E640D /* TimerView.xib in Resources */,
+				CC32B59A2073FEBA006E640D /* PayView.xib in Resources */,
+				CC32B5942073FE89006E640D /* ProfileView.xib in Resources */,
+				CC32B5A22073FEE4006E640D /* AboutView.xib in Resources */,
+				CCAC34E52073E79200F046C5 /* Assets.xcassets in Resources */,
+				CCAC34E32073E78F00F046C5 /* Main.storyboard in Resources */,
+				3A5F8AD220C777DA00DB5759 /* GoogleService-Info.plist in Resources */,
+				3A548FFA20C7646A00558085 /* LoginView.xib in Resources */,
+				CCAC34F22073E8A700F046C5 /* MenuViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		844980CDBC92D7DFAF32A118 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Parkeame-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B15708D24E046DF4D9314D90 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Parkeame/Pods-Parkeame-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Parkeame/Pods-Parkeame-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D2AC07E3BD9F07E3521079BA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Parkeame/Pods-Parkeame-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CCAC34D62073E78F00F046C5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3AC5434A207D9E0C00571E11 /* TableViewCell.swift in Sources */,
+				3AC54347207D8A6700571E11 /* ProfileDelegate.swift in Sources */,
+				3AC54343207D7B9E00571E11 /* AboutDelegate.swift in Sources */,
+				CC32B5A12073FEE4006E640D /* AboutView.swift in Sources */,
+				3A9E9026207D6ABC0055F6C6 /* TimerViewController.swift in Sources */,
+				3AC54341207D7B5200571E11 /* AboutViewController.swift in Sources */,
+				CC32B59D2073FED0006E640D /* TimerView.swift in Sources */,
+				3AB5E0B720C8D26C0062F9D4 /* RegisterDelegate.swift in Sources */,
+				3A1059BD20C78129004ADFDF /* LoginDelgate.swift in Sources */,
+				3AB5E0B920C8D2840062F9D4 /* RegisterView.swift in Sources */,
+				3A1059BF20C78179004ADFDF /* LoginViewController.swift in Sources */,
+				3AB5E0B520C8D2530062F9D4 /* RegisterViewController.swift in Sources */,
+				CCAC34E02073E78F00F046C5 /* ViewController.swift in Sources */,
+				CCAC34F12073E8A700F046C5 /* MenuViewController.swift in Sources */,
+				CC32B5932073FE89006E640D /* ProfileView.swift in Sources */,
+				3AC5434F207DA0D900571E11 /* PayDelegate.swift in Sources */,
+				3A9E9028207D6CDD0055F6C6 /* TimerDelegate.swift in Sources */,
+				3A548FFC20C7691300558085 /* LoginView.swift in Sources */,
+				3AC5434D207D9FD000571E11 /* PayViewController.swift in Sources */,
+				CC32B5992073FEBA006E640D /* PayView.swift in Sources */,
+				3AC54345207D89BA00571E11 /* ProfileViewController.swift in Sources */,
+				CCAC34F52073F33100F046C5 /* Annotation.swift in Sources */,
+				CCAC34DE2073E78F00F046C5 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CCAC34E12073E78F00F046C5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CCAC34E22073E78F00F046C5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CCAC34E62073E79200F046C5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CCAC34E72073E79200F046C5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CCAC34EA2073E79200F046C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CCAC34EB2073E79200F046C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CCAC34ED2073E79200F046C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A0C62B0C88C5810A580B4140 /* Pods-Parkeame.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "$(SRCROOT)/Parkeame/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = mx.com.Edgar.Parkeame;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CCAC34EE2073E79200F046C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 232061A0EA6C0EC059C36B62 /* Pods-Parkeame.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "$(SRCROOT)/Parkeame/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = mx.com.Edgar.Parkeame;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CCAC34D52073E78F00F046C5 /* Build configuration list for PBXProject "Parkeame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CCAC34EA2073E79200F046C5 /* Debug */,
+				CCAC34EB2073E79200F046C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CCAC34EC2073E79200F046C5 /* Build configuration list for PBXNativeTarget "Parkeame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CCAC34ED2073E79200F046C5 /* Debug */,
+				CCAC34EE2073E79200F046C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CCAC34D22073E78F00F046C5 /* Project object */;
+}
